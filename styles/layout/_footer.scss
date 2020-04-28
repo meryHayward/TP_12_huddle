@@ -6,16 +6,29 @@
     color: $white;
     padding: 3rem;
     padding-top: 70px;
+    @media screen and (min-width:680px){
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        display: flex;
+        flex-direction: row;
+    }
+    &__content{
+        @media screen and (min-width:680px){
+            width: 20%;
+        }
+         
+    }
     &__contact-info{
         display: flex;
         flex-direction: row;
-        /* align-items: center; */
         padding: 2rem;
+        font-size: 1.8rem;
     }
     &__img-phone{
         width: 5%;
         height: 5%;
         margin-right: 2rem;
+        align-self: center;
     }
     &__img-location{
         align-self: flex-start;
@@ -27,16 +40,27 @@
         width: 5%;
         height: 5%;
         margin-right: 2rem;
+        align-self: center;
     }
     &__nav{
         display:flex;
         flex-direction: column;
+        font-size: 1.8rem;
     }
     &__social-media{
         text-align: center;
     }
-    &__social{
-        
+    /* &__social{
+        margin-top: 5rem;
+        margin-bottom: 5rem;   
+    } */
+    &__img-logo{
+        width: 50%;
+        margin-top: 2rem;
+    }
+    .footer__copyrigth{
+        font-size: 1rem;
+
     }
     a{
         text-decoration: none;

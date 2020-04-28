@@ -3,4 +3,8 @@ header{
     background: url(../images/bg-hero-mobile.svg);
     width: 100vw;
     padding: 2rem 2rem;
+    background-color: $very-pale-cyan;
+    @media screen and (min-width:420px){
+
+    }
 }

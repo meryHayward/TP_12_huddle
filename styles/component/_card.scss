@@ -10,12 +10,24 @@
     flex-direction: column;
     padding: 3rem 2rem;
     border: none;
+    @media screen and (min-width:680px){
+        display: flex;
+        flex-direction: row;
+    }
     &__img{
         width: 80%;
+        @media screen and (min-width:680px){
+            margin-left: 10rem;
+        }
     }
     &__info{
         text-align: center;
         padding: 2rem;
+        @media screen and (min-width:680px){
+            text-align: start;
+            margin: 10rem;
+            width: 70%;
+        }
     }
     &__title{
         font-size: 3rem;
@@ -28,7 +40,20 @@
     &--float{
         width: 95%; 
         text-align: center;
+        display: flex;
+        flex-direction: column;
         margin-bottom: -50px;
+        @media screen and (min-width:680px){
+            width: 60rem;
+            margin-bottom: -150px;
+        }
     }
+    &--dos{
+        @media screen and (min-width:680px){
+        display: flex;
+        flex-direction: row-reverse;
+        }
     
+}
+
 }

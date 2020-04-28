@@ -1,37 +1,103 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+html {
+  font-size: 100%;
+}
+@media screen and (min-width: 420px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-@media screen and (min-width: 420px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10rem;
 }
 .nav__logo__img {
-  width: 10rem;
+  width: 15rem;
 }
 
 .btn {
-  width: 20rem;
-  height: 3rem;
   border-radius: 5rem;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border: none;
   outline: none;
-  box-shadow: 1px 1px 11px 0px #8f8f8f;
+  box-shadow: 1px 1px 5px #8f8f8f;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn--grey {
+  background-color: white;
+}
+.btn--pink {
+  background-color: #ff52bf;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.hero__info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero__description {
+  margin: 3rem 0;
+  line-height: 3.3rem;
+}
+.hero__title {
+  font-size: 3rem;
+}
+
+.card {
+  width: 90%;
+  box-shadow: 1px 1px 5px #8f8f8f;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  border: none;
+}
+.card__img {
+  width: 80%;
+}
+.card__info {
+  text-align: center;
+  padding: 2rem;
+}
+.card__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.card__description {
+  font-size: 1.5rem;
+  color: #7d8287;
+}
+.card--float {
+  width: 95%;
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+.image {
+  width: 100%;
 }
 
 body {
@@ -43,6 +109,64 @@ body {
 header {
   background-color: #ebfbff;
   background: url(../images/bg-hero-mobile.svg);
+  width: 100vw;
+  padding: 2rem 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #00252e;
+  color: white;
+  padding: 3rem;
+  padding-top: 70px;
+}
+.footer__contact-info {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  padding: 2rem;
+}
+.footer__img-phone {
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+}
+.footer__img-location {
+  align-self: flex-start;
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+}
+.footer__img-email {
+  width: 5%;
+  height: 5%;
+  margin-right: 2rem;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer__social-media {
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer i {
+  border: 0.1rem solid white;
+  border-radius: 50rem;
+  padding: 1rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
